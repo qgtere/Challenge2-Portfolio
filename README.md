@@ -28,7 +28,7 @@ In this challenge we created an application from cero. This is a full stack web 
 
 ## Link to the application
 
-* [Visit the application here!](https://qgtere.github.io/)
+* [Visit the application here!](https://qgtere.github.io/Challenge2-Portfolio/)
 
 ## Mock-up
 
