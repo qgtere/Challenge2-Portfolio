@@ -1,0 +1,305 @@
+:root {    
+    --dark: #2B2926;
+    --fluor: #FD7C03 ;
+    --light: #F8CA8B;
+    --slight: #FEF3E9;
+    --turq: #09C1D0;
+  }
+
+* {     
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: var(--dark);      
+    color: var(--light);  
+    font-size: 30px;
+}
+
+header {
+    display: flex;    
+    justify-content: space-around; 
+    align-items: baseline;
+    font-size: 20px; 
+    
+    background: url(../images/brillos2.png) no-repeat center; 
+    background-size: cover;
+    height: 900px;
+    width: 100%;
+    position: relative;
+    
+}
+
+h1 {
+    margin: 50px;   
+    color: var(--turq);
+}
+h2 {
+    font-size: 35px;
+    color: var(--slight);
+}
+h3 {
+    color: var(--slight);
+    font-size: 15px;
+    font-style: italic;
+    margin-top: 30px;
+    padding: 0 0 0 10%;
+}
+h4 {
+    color: var(--light);    
+    text-align: center;    
+}
+
+ul li {
+    display: inline;
+    list-style-type: none;       
+}
+
+a.info {
+    color: var(--fluor);
+    text-decoration: none;
+    font-size: 15px;
+    border: solid 2px var(--dark);
+    background-color: var(--dark);
+    padding: 8px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+a.info:hover {
+    box-shadow: 2px 2px 5px var(--turq);    
+    
+}
+
+div p:last-child {
+    font-size: 20px;
+    font-style: italic;
+    color: var(--slight);
+}
+
+footer {
+    color: var(--slight);
+    font-size: 15px;
+    font-style: italic;
+    border: dashed 1px var(--fluor);
+    width: 100%;
+    margin: 40px 0;
+    text-align: center;
+}
+
+/*by id */
+#heroTxt {    
+    position: absolute;
+    top: 30%;
+}
+
+#aboutme {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    margin-top: 5%;
+    
+}
+
+#aboutme img {
+    border: double 5px var(--turq);
+    border-radius: 30%;
+    width: 25%;
+    height: 25%;
+}
+
+#work {
+    display: flex;
+    flex-direction: column;
+    margin: 0 100px 100px 100px;
+}
+
+#clickIt {
+    color: var(--turq);
+    font-size: 30px;
+    font-style: normal;
+}
+
+#appsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;    
+    justify-content: center;
+    padding: 0 20% 0 20%;
+}
+
+#appsContainer #handlingFlights {
+    position: relative;
+    border: solid 3px var(--fluor);
+    border-radius: 5px;
+    margin: 10px;
+    height: 250px;
+    width: 100%;
+}
+
+#handlingFlights img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;  
+}
+
+#appsContainer div:hover {
+    opacity: 0.5;
+    cursor: pointer;
+    box-shadow: 3px 5px 18px var(--turq);   
+}
+
+p.boxTitle {
+    position: absolute;       
+    width: auto;
+    height: auto;
+    border: solid 10px var(--fluor);
+    background-color: var(--fluor);
+    font-size: 15px;
+    color: var(--slight);
+    bottom: 10px;
+}
+
+#appsContainer .apps {    
+    position: relative;
+    flex: 1 1 auto;
+    border: solid 3px var(--fluor);
+    border-radius: 5px;
+    justify-content: stretch;
+    margin: 10px;
+    height: 150px;
+    width: 40%;
+    
+}
+
+#contactme {
+    display: flex;
+    flex-direction: column;
+}
+
+#contactme p {
+    color: var(--turq);
+    font-size: 25px;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#contactme div {
+    display: flex;
+    justify-content: center;
+}
+
+/* by class */
+.tool {
+    font-size: 10px;
+}
+
+.apps img {  
+    object-fit: cover;  
+    width: 100%;
+    height: 100%;    
+}
+
+.name {
+    color: var(--fluor);
+}
+
+.box {
+    background-color: var(--slight);
+    width: auto;
+    height: auto;
+    padding: 6px;
+    margin: 8px;
+    border-radius: 5px;
+}
+.box:hover {
+    box-shadow: 2px 2px 12px var(--turq);        
+}
+
+
+/*********** media query ***********/
+
+/*tablets - apps images turn bigger*/
+@media screen and (max-width: 992px) {    
+    #appsContainer {
+        padding: 0 10% 0 10%;
+    }
+    #appsContainer .apps {
+        width: 100%;
+    }
+    header {
+        height: 700px;
+    }
+
+}
+
+/*large smartphones - font sizes change and the about me section turn into columns*/  
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 20px;
+    }
+    h2{
+        font-size: 25px;
+    }
+    div p:last-child{
+        font-size: 18px;
+    }
+    #clickIt {
+        font-size: 25px;
+    }    
+    #aboutme img {
+        width: 35%;
+        height: 35%;
+    }
+    #work {
+        margin: 20px;
+    }
+    #aboutme {
+        display: flex;
+        flex-direction: column;
+    }
+    #aboutme div {
+        margin-bottom: 30px;
+    }   
+    #contactme p {
+        font-size: 20px;
+    } 
+    header {
+        height: 800px;
+    }
+    
+} 
+
+/*small smartphones - navigation bar into column and change some margins*/
+@media screen and (max-width: 576px) {
+    header {
+        display: flex;      
+        flex-direction: column;        
+        position: relative;
+        align-items: center;
+    }
+    h1 {
+        position: absolute;
+        top: 5px;
+        
+    }
+    nav {
+        position: absolute;
+        top: 150px;
+    }
+    ul  {        
+        top: 150px;
+    }
+    #work {
+        margin: 0;
+    }
+    #contactme {
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+
+}
