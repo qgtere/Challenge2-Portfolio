@@ -131,7 +131,7 @@ footer {
     padding: 0 20% 0 20%;
 }
 
-#appsContainer #handlingFlights {
+#appsContainer #mainImage {
     position: relative;
     border: solid 3px var(--fluor);
     border-radius: 5px;
@@ -140,7 +140,7 @@ footer {
     width: 100%;
 }
 
-#handlingFlights img {
+#mainImage img {
     object-fit: cover;
     width: 100%;
     height: 100%;  
