@@ -32,7 +32,7 @@ In this challenge we created an application from cero. This is a full stack web 
 
 ## Mock-up
 
- ![This is how it looks](assets/images/mockUp.png)
+ ![This is how it looks](assets/images/mock_up.png)
 
 
 ---
